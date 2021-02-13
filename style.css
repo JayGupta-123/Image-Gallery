@@ -1,0 +1,102 @@
+
+*{
+    margin: 0;
+    padding: 20;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.mainbox{
+    width: 80%;
+    height: 110%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    user-select: none;
+}
+
+.heading{
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    user-select: none;
+    font-size: 45px;
+}
+
+.smallbox{
+    height: 250px;
+    width: 250px;
+    background-color: none;
+    margin: 30px;
+    user-select: none;
+}
+
+.smallbox:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+#expandedDiv{
+    width: 90%;
+    height: 120%;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#expandedImg{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+#cross{
+    position: absolute;
+    top: 3%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #238098;
+}
+
+#cross:hover{
+    cursor: pointer;
+}
+
+.fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    color: #238098;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    color: #238098;
+}
+
+.fa:hover{
+cursor: pointer;
+}
+
+

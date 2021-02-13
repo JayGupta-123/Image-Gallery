@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <h1 class="heading">Image Gallery</h1>
+    <div class="mainbox">
+        <div class="smallbox">
+            <img src="eggs.jpg" onclick="ShowImage(this);">
+        </div>
+        <div class="smallbox">
+            <img src="burger.jpg" onclick="ShowImage(this);">
+        </div>
+        <div class="smallbox">
+            <img src="pizza.jpg" onclick="ShowImage(this);">
+        </div>
+        <div class="smallbox">
+            <img src="noodles.jpg" onclick="ShowImage(this);">
+        </div>
+        <div class="smallbox">
+            <img src="cake.jpg" onclick="ShowImage(this);">
+        </div>
+        <div class="smallbox">
+            <img src="oranges.jpg" onclick="ShowImage(this);">
+        </div>
+    </div>
+
+    
+
+    <div id="expandedDiv">
+        <span id="cross" onclick="this.parentElement.style.display = 'none' ">&times;</span>
+        <i class="fa fa-chevron-left" onclick="leftBtnClick();" ></i>        
+        <img id="expandedImg">
+        <i class="fa fa-chevron-right" onclick="rightBtnClicked();" ></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
